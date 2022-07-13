@@ -1,0 +1,97 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%) ;
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --Fra: 'Fraunces', serif;
+    --Mon: 'Montserrat', sans-serif;
+    --Out: 'Outfit', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Light-gray);
+}
+
+.containor{
+    max-width: 328px;
+    height: fit-content;
+    background-color: var(--White);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    font-family: var(--Out);
+    display: grid;
+    grid-template-rows: 288px 1fr;
+    padding: 20px;
+}
+
+.image-box{
+    background-image: url("images/image-qr-code.png");
+    background-size: cover;
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+}
+
+.info-all {
+    margin-top: 10px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 10px;
+}
+
+.title{
+    font-size: 22px;
+    color: var(--Dark-blue);
+}
+
+.details{
+    margin-top: 15px;
+    color: var(--Grayish-blue);
+}
+
+.other-info{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-family: var(--Mon);
+}
+
+.other-info a{
+    text-decoration: none;
+}
+
+.web-name{
+    color: brown;
+}
+
+.programmer-name{
+    color: green;
+}
+
+@media (max-width:375px){
+
+    .other-info{
+        font-size: 11px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .containor{
+        top: 50%;
+        left: 50%;
+        transform: translate(-53%, -50%);
+    }
+}
