@@ -33,6 +33,7 @@ body{
     display: grid;
     grid-template-rows: 288px 1fr;
     padding: 20px;
+    margin-top: 20px;
 }
 
 .image-box{
@@ -81,17 +82,59 @@ body{
     color: green;
 }
 
-@media (max-width:375px){
+@media (max-width:530px){
 
     .other-info{
-        font-size: 11px;
+        width: 100%;
+        font-size: 15px;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 4%;
+    }
+}
+
+@media (width:280px){
+
+    .other-info{
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 4%;
     }
 
     .containor{
-        top: 50%;
-        left: 50%;
-        transform: translate(-53%, -50%);
+        transform: scale(0.7);
+        left: -8%;
+        top: 10%;
+    }
+}
+
+@media (min-width:541px) and (max-width:1000px){
+
+    .other-info{
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    .containor{
+        transform: scale(1.6);
+        left: 30%;
+        top: 30%;
+    }
+}
+@media (width:912px){
+
+    .other-info{
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    .containor{
+        transform: scale(1.6);
+        left: 32%;
+        top: 30%;
     }
 }
